@@ -134,6 +134,7 @@ header{
     margin: 150px 0 250px;
     border: 2px solid var(--white);
     width: 90%;
+    max-width: 650px;
     text-align: left;
 }
 

@@ -1,0 +1,76 @@
+header{
+    align-items: flex-start;
+    background-image: url(./images/desktop/image-hero.jpg);
+    background-size: cover;
+}
+
+.nav-title__container{
+    padding: 0;
+    margin: 0;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    transition: 0s;
+}
+
+.button-image-container{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    transition: 0s;
+}
+
+.header-container__logo{
+    margin: 0;
+    width: 170px;
+    display: inline-block;
+}
+
+.header-container__nav{
+    box-sizing: border-box;
+    padding: 60px 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-links__bar_close{
+    position: relative;
+    left: 0;
+    width: 330px;
+    height: auto;
+    display: block;
+    transition: 0s;
+}
+
+.nav-bar__content{
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-item{
+    margin: 0;
+    padding: 0 10px;
+    font-size: 1.7rem;
+    font-weight: lighter;
+    text-transform: none;
+    cursor: pointer;
+}
+
+.title-container{
+    margin: 40px 0 150px 70px;
+    border: 2px solid var(--white);
+    width: 90%;
+    text-align: left;
+}
+
+.main-header__title{
+    margin: 30px;
+    font-size: 6rem;
+}
