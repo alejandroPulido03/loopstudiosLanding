@@ -1,0 +1,150 @@
+/*Convention
+    position
+    box model
+    display
+    background
+    fonts
+    secondary styles
+*/
+
+/*font-family: 'Alata', sans-serif;
+font-family: 'Josefin Sans', sans-serif;*/
+:root{
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --dark-gray: hsl(0, 0%, 55%);
+    --very-dark-gray: hsl(0, 0%, 41%);
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--white);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    margin: 0;
+    width: 100%;
+}
+
+/*Header*/
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./images/mobile/image-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-container__nav{
+    box-sizing: border-box;
+    padding: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container__logo{
+    margin: 0;
+    width: 130px;
+    display: inline-block;
+}
+
+.button-image-container{
+    margin: 0;
+    width: 18px;
+    height: 12px;
+    display: inline-block;
+    background-image: url(./images/icon-hamburger.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Desplegable Menu*/
+
+.header-links__bar_close{
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 0;
+    height: 0;
+    transition: 500ms;
+}
+
+.header-links__bar_open{
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black);
+    transition: 500ms;
+}
+
+.nav-title__container{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+}
+
+.header-container__nav-logo{
+    margin: 0;
+    width: 130px;
+    display: inline-block;
+}
+
+.header-container__nav-button{
+    margin: 0;
+    width: 18px;
+    height: 12px;
+    display: inline-block;
+}
+
+.nav-bar__content{
+    margin-top: 50px;
+    padding: 20px;
+    list-style-type: none;
+}
+
+.nav-item{
+    margin: 30px 0;
+    padding: 0 10px;
+    font-size: 2.2rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+/*End Desplegable menu*/
+
+.title-container{
+    margin: 150px 0 250px;
+    border: 2px solid var(--white);
+    width: 90%;
+    text-align: left;
+}
+
+.main-header__title{
+    box-sizing: border-box;
+    margin: 20px 15px;
+    width: 80%;
+    font-weight: lighter;
+    font-stretch: semi-condensed;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+/*Section 1*/
