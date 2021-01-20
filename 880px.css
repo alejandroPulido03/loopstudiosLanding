@@ -1,3 +1,14 @@
+:root{
+    --earth: url(./images/desktop/image-deep-earth.jpg);
+    --night-arcade: url(./images/desktop/image-night-arcade.jpg);
+    --soccer: url(./images/desktop/image-soccer-team.jpg);
+    --grid:url(./images/desktop/image-grid.jpg);
+    --above:url(./images/desktop/image-from-above.jpg);
+    --borealis:url(./images/desktop/image-pocket-borealis.jpg);
+    --curiosity:url(./images/desktop/image-curiosity.jpg);
+    --fisheye:url(./images/desktop/image-fisheye.jpg);
+}
+
 header{
     align-items: flex-start;
     background-image: url(./images/desktop/image-hero.jpg);
@@ -76,3 +87,67 @@ header{
 }
 
 /*End Header*/
+
+/*Article section*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section__article{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    padding: auto 30px;
+}
+
+.section-article__image{
+    position: relative;
+    margin-left: 0;
+    width: 70%;
+}
+
+.section-article__container{
+    position: absolute;
+    right: -7%;
+    bottom: -40px;
+    padding: 0  0 0 70px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    text-align: left;
+}
+
+.section-article__container h2{
+    font-size: 4rem;
+    width: 100%;
+}
+
+/*Grid Menu*/
+
+.grid-menu__title{
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+
+.grid-menu__button{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    justify-self: flex-end;
+}
+
+.grid-items__list{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.grid-item{
+    height: 450px;
+    padding: 25px;
+}

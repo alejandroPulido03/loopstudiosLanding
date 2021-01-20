@@ -14,12 +14,22 @@ font-family: 'Josefin Sans', sans-serif;*/
     --black: hsl(0, 0%, 0%);
     --dark-gray: hsl(0, 0%, 55%);
     --very-dark-gray: hsl(0, 0%, 41%);
+    --back-filter: linear-gradient(90deg, rgba(250, 250, 255, 0.473) 0%, rgba(239, 246, 247, 0.384) 100%);
+    --earth: url(./images/mobile/image-deep-earth.jpg);
+    --night-arcade: url(./images/mobile/image-night-arcade.jpg);
+    --soccer: url(./images/mobile/image-soccer-team.jpg);
+    --grid:url(./images/mobile/image-grid.jpg);
+    --above:url(./images/mobile/image-from-above.jpg);
+    --borealis:url(./images/mobile/image-pocket-borealis.jpg);
+    --curiosity:url(./images/mobile/image-curiosity.jpg);
+    --fisheye:url(./images/mobile/image-fisheye.jpg);
 }
 
 html{
     font-size: 62.5%;
     font-family: 'Josefin Sans', sans-serif;
     color: var(--white);
+    background-image: 
 }
 
 body{
@@ -155,14 +165,15 @@ header{
 
 .main-section__article{
     padding: 90px 0;
-    width: 100%;
-    height: 100vh;
+    margin: 0 auto;
+    width: 85%;
+    max-width: 1000px;
 }
 
 .section-article__image{
     margin: 0 auto;
     width: 90%;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .section-article__container{
@@ -186,3 +197,148 @@ header{
     color: var(--dark-gray);
 }
 
+/*Grid*/
+
+.main-grid__menu{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    color: black;
+}
+
+.grid-menu__title{
+    align-self: center;
+    justify-self: center;
+    font-size: 4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.grid-menu__button{
+    align-self: center;
+    justify-self: center;
+    width: 120px;
+    height: 35px;
+    grid-row-start: 3;
+    background: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-style: 1px solid black;
+}
+
+.grid-menu__button:active,
+.grid-menu__button:hover{
+    background-color: var(--black);
+    color: white;
+    outline: none;
+    border-style: none;
+    cursor: pointer;
+    transition: background-color 500ms;
+}
+
+.grid-menu__button:focus{
+    outline: none;
+    border-style: 1px solid black;
+    transition: background-color 500ms;
+}
+
+.grid-items__list{
+    padding: 0;
+    grid-column: span 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    list-style-type: none;
+}
+
+.grid-item{
+    box-sizing: border-box;
+    height: 150px;
+    padding: 25px;
+    padding-right: 90px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(80%);
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.grid-item:hover{
+    color: black;
+    transition: 500ms;
+}
+
+.grid-item:nth-child(1){
+    background-image: var(--earth);
+}
+
+.grid-item:nth-child(1):hover{
+    background-image:var(--back-filter), var(--earth); 
+}
+
+.grid-item:nth-child(2){
+    background-image: var(--night-arcade);
+}
+
+.grid-item:nth-child(2):hover{
+    background-image:var(--back-filter), var(--night-arcade); 
+}
+
+.grid-item:nth-child(3){
+    background-image: var(--soccer);
+}
+
+.grid-item:nth-child(3):hover{
+    background-image:var(--back-filter), var(--soccer); 
+}
+
+.grid-item:nth-child(4){
+    background-image: var(--grid);
+}
+
+.grid-item:nth-child(4):hover{
+    background-image:var(--back-filter), var(--grid); 
+}
+
+.grid-item:nth-child(5){
+    background-image: var(--above);
+}
+
+.grid-item:nth-child(5):hover{
+    background-image:var(--back-filter), var(--above); 
+}
+
+.grid-item:nth-child(6){
+    background-image: var(--borealis);
+}
+
+.grid-item:nth-child(6):hover{
+    background-image:var(--back-filter), var(--borealis); 
+}
+
+.grid-item:nth-child(7){
+    background-image: var(--curiosity);
+}
+
+.grid-item:nth-child(7):hover{
+    background-image:var(--back-filter), var(--curiosity); 
+}
+
+.grid-item:nth-child(8){
+    background-image: var(--fisheye);
+}
+
+.grid-item:nth-child(8):hover{
+    background-image:var(--back-filter), var(--fisheye); 
+}
