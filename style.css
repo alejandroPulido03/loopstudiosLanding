@@ -26,6 +26,7 @@ font-family: 'Josefin Sans', sans-serif;*/
 }
 
 html{
+    position: relative;
     font-size: 62.5%;
     font-family: 'Josefin Sans', sans-serif;
     color: var(--white);
@@ -341,4 +342,78 @@ header{
 
 .grid-item:nth-child(8):hover{
     background-image:var(--back-filter), var(--fisheye); 
+}
+
+/*Footer*/
+
+footer{
+    margin-top: 100px;
+    padding: 40px 0;
+    width: 100%;
+    background-color: var(--black);
+}
+
+.footer-grid__container{
+    display: grid;
+    gap: 30px;
+}
+
+.footer-logo__container{
+    width: 140px;
+    justify-self: center;
+    align-self: center;
+}
+
+.footer-container__nav{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.footer-container__socialmedia{
+    display: flex;
+    gap: 15px;
+}
+
+.footer-list__socialmedia{
+    width: 22px;
+    height: 22px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-grid__container > ul{
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+    align-self: center;
+    list-style-type: none;
+}
+
+.footer-copyright-message{
+    margin: 0;
+    justify-self: center;
+    align-self: center;
+    font-size: 1.3rem;
+    font-family: 'Alata', sans-serif;
+    color: var(--dark-gray);
+}
+
+.footer-list__socialmedia:nth-child(1){
+    background-image: url(./images/icon-facebook.svg);
+}
+
+.footer-list__socialmedia:nth-child(2){
+    background-image: url(./images/icon-twitter.svg);
+}
+
+.footer-list__socialmedia:nth-child(3){
+    background-image: url(./images/icon-pinterest.svg);
+}
+
+.footer-list__socialmedia:nth-child(4){
+    background-image: url(./images/icon-instagram.svg);
 }

@@ -151,3 +151,33 @@ main{
     height: 450px;
     padding: 25px;
 }
+
+/*Footer*/
+.footer-grid__container{
+    max-width: 1000px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:  repeat(2, 1fr);
+    padding: auto;
+}
+
+.footer-logo__container{
+    justify-self: start;
+    margin: 0;
+}
+
+.footer-container__nav{
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    grid-row-start: 2;
+}
+
+.footer-container__socialmedia{
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.footer-copyright-message{
+    justify-self: right;
+}
