@@ -30,13 +30,23 @@ html{
     font-size: 62.5%;
     font-family: 'Josefin Sans', sans-serif;
     color: var(--white);
-    background-image: 
+    background-image:
 }
 
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 5px;
 }
 
 img{
