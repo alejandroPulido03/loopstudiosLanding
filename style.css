@@ -25,11 +25,13 @@ font-family: 'Josefin Sans', sans-serif;*/
     --fisheye:url(./images/mobile/image-fisheye.jpg);
 }
 
-html{
-    position: relative;
-    font-size: 62.5%;
+*{
     font-family: 'Josefin Sans', sans-serif;
     color: var(--white);
+}
+
+html{
+    position: relative;
 }
 
 body{
@@ -144,8 +146,8 @@ header{
 .nav-item{
     margin: 30px 0;
     padding: 0 10px;
-    font-size: 2.2rem;
-    font-weight: lighter;
+    
+    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -165,7 +167,7 @@ header{
     width: 80%;
     font-weight: lighter;
     font-stretch: semi-condensed;
-    font-size: 4rem;
+    font-size: 40px;
     text-transform: uppercase;
 }
 
@@ -195,15 +197,15 @@ header{
 }
 
 .section-article__container h2{
-    font-size: 3rem;
+    font-size: 30px;
     font-weight: lighter;
     text-transform: uppercase;
 }
 
 .section-article__container p{
     font-family: 'Alata', sans-serif;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+    font-size: 15px;
+    line-height: 25px;
     color: var(--dark-gray);
 }
 
@@ -222,7 +224,7 @@ header{
 .grid-menu__title{
     align-self: center;
     justify-self: center;
-    font-size: 4rem;
+    font-size: 40px;
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -236,9 +238,11 @@ header{
     background: transparent;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 12px;
     text-transform: uppercase;
-    border-style: 1px solid black;
+    border: 1px solid gray;
+    color: var(--black);
+    border-radius: 5px;
 }
 
 .grid-menu__button:active,
@@ -279,7 +283,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     filter: brightness(80%);
-    font-size: 3rem;
+    font-size: 30px;
     text-transform: uppercase;
     color: white;
 }
@@ -353,6 +357,28 @@ header{
     background-image:var(--back-filter), var(--fisheye); 
 }
 
+/*Contact form*/
+.main-grid__form{
+    width: 30%;
+    margin: 80px auto;
+}
+
+.main-grid__form h2{
+    color: var(--black);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.contact-form button{
+    font-weight: 700 !important;
+    font-size: 18px !important;
+}
+
+.contact-form label{
+    color: var(--black) !important;
+}
+
 /*Footer*/
 
 footer{
@@ -377,7 +403,7 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    font-size: 1.4rem;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -406,7 +432,7 @@ footer{
     margin: 0;
     justify-self: center;
     align-self: center;
-    font-size: 1.3rem;
+    font-size: 13px;
     font-family: 'Alata', sans-serif;
     color: var(--dark-gray);
 }

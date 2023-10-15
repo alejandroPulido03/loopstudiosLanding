@@ -68,8 +68,8 @@ header{
 .nav-item{
     margin: 0;
     padding: 0 10px;
-    font-size: 1.7rem;
-    font-weight: lighter;
+    font-size: 17px;
+    
     text-transform: none;
     cursor: pointer;
 }
@@ -83,7 +83,7 @@ header{
 
 .main-header__title{
     margin: 30px;
-    font-size: 6rem;
+    font-size: 60px;
 }
 
 /*End Header*/
@@ -125,7 +125,7 @@ main{
 }
 
 .section-article__container h2{
-    font-size: 4rem;
+    font-size: 40px;
     width: 100%;
 }
 
